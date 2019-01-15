@@ -28,7 +28,7 @@ public class IssuesPage {
     @FindBy(id = "issue_priority")
     public SelenideElement issuePrioritySelector;
 
-    @FindBy(xpath = "//label[.='Criticallll']")
+    @FindBy(xpath = "//label[.='Critical']")
     public SelenideElement issuePriorityCritical;
 
     @FindBy(xpath = "//label[.='High']")
@@ -37,7 +37,7 @@ public class IssuesPage {
     @FindBy(xpath = "//label[.='Medium']")
     public SelenideElement issuePriorityMedium;
 
-    @FindBy(xpath = "//label[.='Low']")
+    @FindBy(xpath = "//label[.='Loww']")
     public SelenideElement issuePriorityLow;
 
     @FindBy(name = "commit")

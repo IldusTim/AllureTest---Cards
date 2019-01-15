@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easyqa/qa/pages/IssuesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="43" />
+            <state relative-caret-position="204">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -70,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/FirstTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+              <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -717,7 +717,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/FirstTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+          <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -726,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/easyqa/qa/pages/IssuesPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="43" />
+        <state relative-caret-position="204">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
         </state>
       </provider>
     </entry>
