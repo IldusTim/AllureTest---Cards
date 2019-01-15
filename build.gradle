@@ -1,0 +1,64 @@
+apply plugin: 'java'
+apply plugin: 'io.qameta.allure'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.3"
+    }
+}
+
+configurations {
+    agent
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+    // https://mvnrepository.com/artifact/com.codeborne/selenide
+    compile group: 'com.codeborne', name: 'selenide', version: '5.1.0'
+    // https://mvnrepository.com/artifact/junit/junit
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'io.qameta.allure', name: 'allure-selenide', version: '2.0-BETA22'
+
+    compile 'com.beust:j.commander:1.72'
+    compile 'org.projectlombok:lombok:1.16.18'
+    compile 'org.assertj:assertj-core:3.8.0'
+    agent "org.aspect:aspectjweaver:1.8.10"
+
+}
+
+task testCards (type : Test) {
+    useTestNG {
+        suites "src/test/resources/testng.xml"
+    }
+    systemProperty 'allure.model.indentOutput', true
+    systemProperty 'allure.results.directory', 'build/allure-results'
+}
+
+allure {
+    version = '2.2.1'
+    autoconfigure = true
+    aspectjweaver = true
+    allureJavaVersion = '2.0-Beta21'
+}
+
+testCards.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
