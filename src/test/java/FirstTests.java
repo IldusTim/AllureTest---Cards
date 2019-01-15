@@ -46,7 +46,7 @@ public class FirstTests {
 
     @Test
     public void createCard() {
-        CardData issue = new CardData("test2","test description", "Low");
+        CardData issue = new CardData("test2","test description", "Critical");
         UserData userData = new UserData("idustim@ya.ru","NK7050507");
         LoginPage loginPage = open("https://app.geteasyqa.com/users/sign_in", LoginPage.class);
         loginPage.enterUser(userData.getUserEmail(), userData.getUserPassword());
